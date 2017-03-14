@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_HdhpAOblEeaUk-8VOPfPBQ" targetNamespace="http://tns.tibco.com/bw/composite/JMSReceiver-HAWKDemo" name="JMSReceiver-HAWKDemo" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_I7sQIOblEeaUk-8VOPfPBQ" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_I78HwOblEeaUk-8VOPfPBQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_I8AZMOblEeaUk-8VOPfPBQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_I8EqoOblEeaUk-8VOPfPBQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_I8NNgOblEeaUk-8VOPfPBQ" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_I8TUIOblEeaUk-8VOPfPBQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_I8YzsOblEeaUk-8VOPfPBQ" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_I8e6UOblEeaUk-8VOPfPBQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_I8jy0OblEeaUk-8VOPfPBQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_e4BYQAiJEeeAhbgxrrtiWQ" name="/newGroup/JMSURL" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_1w0U8AiJEeeAhbgxrrtiWQ" name="/newGroup/FilePath" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_ChX1UAiVEeeAhbgxrrtiWQ" name="/newGroup/WriteFile" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_IUDBUOblEeaUk-8VOPfPBQ" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_IUEPcOblEeaUk-8VOPfPBQ" processName="jmsreceiver-hawkdemo.SendJMSMessage"/>
+  </sca:component>
+  <sca:component xmi:id="_-vAkQOblEeaUk-8VOPfPBQ" name="ComponentReceiveJMSMEssage" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_-vAkQeblEeaUk-8VOPfPBQ" processName="jmsreceiver-hawkdemo.ReceiveJMSMEssage"/>
+  </sca:component>
+</sca:composite>
